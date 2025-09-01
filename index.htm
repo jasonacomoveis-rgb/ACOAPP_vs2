@@ -4,17 +4,27 @@
   <meta charset="UTF-8">
   <title>Meu App</title>
 
-  <!-- Ícone que aparecerá na tela inicial -->
-  <link rel="icon" href="ícone.png" sizes="192x192">
-  <link rel="apple-touch-icon" href="ícone.png">
+  <!-- Ícone -->
+  <link rel="icon" href="icone.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="icone.png">
+
+  <!-- Manifest -->
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <h2>Bem-vindo ao Meu App</h2>
-  <p>Adicione este site à sua tela inicial para acessar rapidamente.</p>
+  <p>Adicione este site à tela inicial para acessar como aplicativo.</p>
   <p>
     <a href="https://script.google.com/macros/s/AKfycbzZ6HLGepS42hE8Fp5azapwmyWii2QuSK9APkfbxM2pUcOOeRIoTNmOxJECc-qbSbOrkw/exec">
       Abrir App
     </a>
   </p>
+
+  <script>
+    // Redireciona automaticamente após 3 segundos
+    setTimeout(function() {
+      window.location.href = "https://script.google.com/macros/s/AKfycbzZ6HLGepS42hE8Fp5azapwmyWii2QuSK9APkfbxM2pUcOOeRIoTNmOxJECc-qbSbOrkw/exec";
+    }, 3000);
+  </script>
 </body>
 </html>
